@@ -6,13 +6,12 @@
 <?import javafx.scene.layout.FlowPane?>
 <?import javafx.scene.shape.Ellipse?>
 
-<FlowPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1"
-fx:controller="application.FXMLController">
+<FlowPane xmlns="http://javafx.com/javafx/" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FXMLController">
    <children>
       <SplitPane dividerPositions="0.5" prefHeight="200.0" prefWidth="200.0">
          <items>
-            <Button fx:id="myButton" mnemonicParsing="false" text="Button" />
-            <Label fx:id="myLabel" text="Label" />
+            <Button fx:id="myButton" mnemonicParsing="false" text="count" onAction="#handleCountButtonAction"/>
+            <Label fx:id="myLabel" text="0" />
          </items>
       </SplitPane>
       <Ellipse fill="DODGERBLUE" radiusX="100.0" radiusY="80.0" stroke="BLACK" strokeType="INSIDE" />
